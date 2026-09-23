@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.turbo/
+dist/
+.next/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Environment secrets — NEVER COMMIT
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Uploads / temp files
+uploads/
+*.tmp
+
+# Build / deploy logs — accidental artefacts, never part of a commit
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
+
+# Exports générés : ils contiennent les données personnelles des participants
+# (emails, téléphones, régimes alimentaires, informations médicales).
+# Un export a été committé par erreur le 2026-08-12 et servi publiquement.
+export.xlsx
+apps/api/export.xlsx
+*.xlsx
+!docs/**/*.xlsx

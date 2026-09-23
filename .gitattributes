@@ -1,0 +1,16 @@
+# Binary files git must never touch.
+#
+# Without this, a clone on a machine with core.autocrlf=true rewrites every
+# LF byte inside a PDF or an Office document into CRLF, and the file arrives
+# corrupt. It commits intact, which is what makes it easy to miss: the damage
+# happens on the CLIENT's checkout, not on ours.
+*.pdf   binary
+*.docx  binary
+*.xlsx  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
